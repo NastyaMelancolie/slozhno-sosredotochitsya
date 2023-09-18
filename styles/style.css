@@ -6,7 +6,7 @@
   background-attachment: fixed;
   background-position: center;
   color: var(--main-text-color);
-  font-family: var(--main-font);
+  font-family: var(--main-font), monospace;
   font-size: var(--main-font-size);
   line-height: var(--main-line-height);
 }
@@ -23,7 +23,7 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   grid-template-columns: repeat(2, 1fr);
-  font-family: var(--main-font);
+  font-family: var(--main-font), monospace;
   font-size: var(--main-font-size);
 }
 
@@ -74,8 +74,10 @@
 }
 
 .header__theme-menu-button:hover {
+  cursor: pointer;
   border: 1px solid var(--hover-color);
 }
+
 
 .header__theme-menu-button:focus {
   outline: none;
@@ -117,7 +119,7 @@
 .rec-decoration {
   position: absolute;
   color: var(--menu-color);
-  font-family: var(--main-font);
+  font-family: var(--main-font), monospace;
   font-size: var(--main-font-size);
   font-style: normal;
   font-weight: 400;
@@ -201,9 +203,11 @@
 
 .link:hover {
   border-block-end: 1px solid var(--main-text-color);
+  cursor: pointer;
 }
 
 .link:focus {
+  outline:none;
   border: 1px solid var(--main-text-color);
 }
 
